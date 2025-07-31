@@ -1,0 +1,219 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.container{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    background-color: black;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.main{
+    width: 55%;
+    height: 95%;
+    border: 4px solid rgb(0, 0, 0);
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(239, 238, 125);
+    gap: 20px;
+    padding-bottom: 20px;
+    align-items: center;
+}
+
+.hed{
+    height: auto;
+    /* border: 2px solid red; */
+    /* text-align: center; */
+    margin-top: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hed>p{
+    font-size: 2.7rem;
+    color: rgb(145, 21, 81);
+    font-weight: 800;
+}
+
+.player{
+    height: auto;
+    width: 100%;
+    /* border: 2px solid red; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+
+
+.PC{
+    height: 100%;
+    width: auto;
+    border: 4px solid rgb(0, 0, 0);
+    font-size: 1.7rem;
+    font-weight: 700;
+    color: rgb(10, 34, 106);
+    padding: 14px;
+    border-radius: 5px;
+}
+
+.pscs{
+    color: rgb(155, 34, 91);
+
+}
+.signs{
+    width: 80%;
+    height: 140px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.signs>div{
+    height: 120px;
+    border: 5px solid rgb(83, 6, 85);
+    width: 110px;
+    border-radius: 9px;
+    overflow: hidden;
+}
+
+.signs>div>img{
+    height: 118px;
+    width: 107px;
+    border-radius: none;
+    opacity: 0.5;
+
+}
+
+
+.l_hed{
+    font-size: 1.9rem;
+    font-weight: 700;
+}
+
+.btn{
+    height: 50px;
+    /* border: 4px solid rgb(83, 6, 85); */
+    width: 300px;
+    display: flex;
+    gap: 20px;
+}
+
+.btn>button{
+    height: 50px;
+    width: 300px;
+    font-size: 1.4rem;
+    font-weight: 700;
+    border-radius: 10px;
+    background-color: rgb(101, 16, 57);
+    color: rgb(255, 203, 107);
+}
+
+#resultbtn{
+    background-color: rgb(5, 100, 103);
+}
+
+
+
+
+/* ========== Media Queries (Responsive Design) ========== */
+
+/* For Tablets (768px and below) */
+@media screen and (max-width: 768px) {
+  .main {
+    width: 80% !important; /* Wider on smaller screens */
+    height: auto !important;
+    padding: 20px 0;
+  }
+
+  .hed > p {
+    font-size: 2rem !important; /* Smaller heading */
+  }
+
+  .player {
+    flex-direction: column; /* Stack scores vertically */
+    gap: 10px !important;
+  }
+
+  .signs {
+    width: 90% !important;
+    height: auto !important;
+    flex-wrap: wrap; /* Allow wrapping on small screens */
+    justify-content: center;
+    gap: 15px;
+  }
+
+  .signs > div {
+    height: 100px !important;
+    width: 90px !important;
+  }
+
+  .signs > div > img {
+    height: 98px !important;
+    width: 85px !important;
+  }
+
+  .l_hed {
+    font-size: 1.5rem !important;
+    text-align: center;
+  }
+
+  .btn {
+    width: 90% !important;
+    flex-direction: column; /* Stack buttons vertically */
+    align-items: center;
+  }
+
+  .btn > button {
+    width: 50% !important;
+  }
+  .btn{
+    gap: 5px;
+  }
+}
+
+/* For Mobile (480px and below) */
+@media screen and (max-width: 480px) {
+  .hed > p {
+    font-size: 1.5rem !important;
+  }
+
+  .main{
+    height: 100%;
+  }
+
+  .PC {
+    font-size: 1.3rem !important;
+    padding: 8px !important;
+  }
+
+  .signs > div {
+    height: 80px !important;
+    width: 70px !important;
+  }
+
+  .signs > div > img {
+    height: 78px !important;
+    width: 68px !important;
+  }
+
+  .l_hed {
+    font-size: 1.2rem !important;
+  }
+
+  .btn{
+    gap: 5px;
+  }
+  .btn > button {
+    font-size: 1.1rem !important;
+  }
+}
